@@ -1,6 +1,8 @@
 package com.grupo3.androiddsa.retrofit;
 
+import com.google.android.material.bottomappbar.BottomAppBar;
 import com.grupo3.androiddsa.domain.Characters;
+import com.grupo3.androiddsa.domain.Faqs;
 import com.grupo3.androiddsa.domain.MyObjects;
 import com.grupo3.androiddsa.domain.User;
 import com.grupo3.androiddsa.domain.to.ObjectRecycler;
@@ -19,7 +21,10 @@ import retrofit2.http.PUT;
 import retrofit2.http.Path;
 
 public interface Api {
-    String URL = "http://147.83.7.205:80/dsaApp/";
+    String URL = "http://192.168.43.194:80/dsaApp/";
+
+    @GET("gameManager/FAQs")
+    Call<List<Faqs>> getFaqs();
 
     @POST("gameManager/user/login")
     Call<Void> logInUser(@Body Credentials credentials);

@@ -35,8 +35,13 @@ public class MainPrincipal extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
+                    /**
                     case R.id.lista:
                         mCurrentFragment = new AmigosFragment();
+                        break;
+                     **/
+                    case R.id.faqs:
+                        mCurrentFragment = new FaqsFragment();
                         break;
                     case R.id.tienda:
                         mCurrentFragment = new TiendaFragment();

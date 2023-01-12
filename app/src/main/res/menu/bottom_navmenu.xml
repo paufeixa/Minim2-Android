@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <item android:title="Social"
+    <item android:title="FAQs"
+        android:icon="@drawable/faqs"
+        android:id="@+id/faqs"/>
+    <!--<item android:title="Social"
         android:icon="@drawable/social"
-        android:id="@+id/lista" />
+        android:id="@+id/lista" />-->
     <item android:title="Tienda"
         android:icon="@drawable/tienda"
         android:id="@+id/tienda"/>
